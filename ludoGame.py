@@ -240,7 +240,7 @@ def compLoc(diceValue):
         ind=cList.index(compTokensLoc[tkn])
         if(compTokensLoc[tkn] in saveLocs):
             ind=saveLocs.index(compTokensLoc[tkn])
-            if((ind+diceValue) <=(len(saveLocs-1))):
+            if((ind+diceValue) <=(len(saveLocs)-1)):
                 compTokensLoc[tkn]=saveLocs[ind+diceValue]
                 return compTokensLoc[tkn]
             else:
